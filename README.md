@@ -130,13 +130,13 @@ Adding alpha hyper paramter rate
 ( \text{dW}[2] =  \text{W}[2]  -  \alpha  \text{dW}[2].
 ```
 ```math
- ( \text{dbais}[2] = \text{dbais}[2]  -  \alpha  \text{dbais}[2].
+ ( \text{bais}[2] = \text{bais}[2]  -  \alpha  \text{dbais}[2].
 ```
 ```math
-( \text{dW}[1] =  \text{W}[1]  -  \alpha  \text{dW}[1].
+( \text{W}[1] =  \text{W}[1]  -  \alpha  \text{dW}[1].
 ```
 ```math
- ( \text{dbais}[1] = \text{dbais}[1]  -  \alpha  \text{dbais}[1].
+ ( \text{bais}[1] = \text{bais}[1]  -  \alpha  \text{dbais}[1].
 ```
 ## Conclusion
 
