@@ -96,7 +96,8 @@ In vectorized form, the softmax function for a vector \( \mathbf{z} \) can be wr
 \text{softmax}(\mathbf{z})_i = \frac{e^{z_i}}{\sum_{j=1}^{n} e^{z_j}}
 ```
 
-![image](https://github.com/Zyadsowilam/ScratchNeuralNetwork/assets/96208685/101ed3ba-3aff-4179-a29c-e4d98c77f75b)
+![image](https://github.com/Zyadsowilam/ScratchNeuralNetwork/assets/96208685/f644c663-98d1-4f93-b0a0-4e76ebad9668)
+
 
 ## Conclusion
 
