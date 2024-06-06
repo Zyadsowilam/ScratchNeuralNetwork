@@ -115,7 +115,7 @@ Backpropagation, short for "backward propagation of errors," is an algorithm for
  ( \text{dbais}[2] = \frac{1}{m} \sum \text{dhidden\_layer}[2] ), \text{the average of ( dhidden\_layer[2] ) across all samples.}
 ```
 ```math
- ( \text{dhidden\_layer}[1] = (\text{W}[2]^T \times \text{dhidden\_layer}[2]) \dot g'(\text{hidden\_layer}[1]) ), \text{where ( g' ) represents the derivative of the activation function applied element-wise.}
+ ( \text{dhidden\_layer}[1] = (\text{W}[2]^T \times \text{dhidden\_layer}[2]) \circ g'(\text{hidden\_layer}[1]) ), \text{where ( g' ) represents the derivative of the activation function applied element-wise.}
 ```
 ```math
 ( \text{dW}[1] = \frac{1}{m} \text{dhidden\_layer}[1] \times \text{input\_layer}^T ).
@@ -123,8 +123,15 @@ Backpropagation, short for "backward propagation of errors," is an algorithm for
 ```math
  ( \text{dbais}[1] = \frac{1}{m} \sum \text{dhidden\_layer}[1] ).
 ```
-These equations represent the gradients of the loss function with respect to the parameters of the neural network, which are used to update the weights and biases during training via gradient descent or other optimization algorithms.
 
+These equations represent the gradients of the loss function with respect to the parameters of the neural network, which are used to update the weights and biases during training via gradient descent or other optimization algorithms.
+Adding alpha hyper paramter rate
+```math
+( \text{dW}[1] = \frac{1}{m} \text{dhidden\_layer}[1] \subtract \text{input\_layer}^T ).
+```
+```math
+ ( \text{dbais}[1] = \frac{1}{m} \sum \text{dhidden\_layer}[1] ).
+```
 ## Conclusion
 
 
