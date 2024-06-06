@@ -36,7 +36,7 @@ Activation functions introduce non-linearity to the model, allowing the network 
 ### Sigmoid Activation Function
 
 The sigmoid function outputs a value between 0 and 1:
-\[ \sigma(x) = \frac{1}{1 + e^{-x}} \]
+$$ \sigma(x) = \frac{1}{1 + e^{-x}} $$
 - **Behavior**: Values close to 1 indicate an active neuron, and values close to 0 indicate an inactive neuron. The sigmoid function pushes the input values to the ends of the curve (0 or 1), with significant changes in output for inputs around zero.
 
 ### Tanh Activation Function
