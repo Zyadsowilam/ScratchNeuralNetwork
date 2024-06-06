@@ -109,7 +109,7 @@ Backpropagation, short for "backward propagation of errors," is an algorithm for
  ( text{dhidden\_layer}[2] = \text{output\_Layer}[2] - Y ), where ( Y ) is the true labels.
 ```
 ```math
- ( text{dW}[2] = \frac{1}{m} \text{dhidden\_layer}[2] \times \text{output\_Layer}[1]^T ), where \( m \) is the number of samples.
+ ( text{dW}[2] = \frac{1}{m} \text{dhidden\_layer}[2] \times \text{output\_Layer}[1]^T ), where \( m ) is the number of samples.
 ```
 ```math
  ( \text{dbais}[2] = \frac{1}{m} \sum \text{dhidden\_layer}[2] \), the average of \( \text{dhidden\_layer}[2] ) across all samples.
