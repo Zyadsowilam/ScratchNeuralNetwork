@@ -38,6 +38,7 @@ The sigmoid function outputs a value between 0 and 1:
 ```math
 \mathbf{s(x) = \frac{1}{1 + e^{-x}}}
 ```
+![image](https://github.com/Zyadsowilam/ScratchNeuralNetwork/assets/96208685/e14b6b86-f3f5-4208-9fd6-df59896f32eb)
 - **Behavior**: Values close to 1 indicate an active neuron, and values close to 0 indicate an inactive neuron. The sigmoid function pushes the input values to the ends of the curve (0 or 1), with significant changes in output for inputs around zero.
 
 ### Tanh Activation Function
@@ -46,36 +47,22 @@ The tanh function outputs a value between -1 and 1:
 ```math
 \mathbf{tanh(x) = \frac{e^{x} - e^{-x}}{e^{x} + e^{-x}} = \frac{1 - e^{-2x}}{1 + e^{-2x}} = \frac{2 - (1 + e^{-2x})}{1 + e^{-2x}}= \frac{2}{1 + e^{-2x}} - 1 = 2s(2x) - 1}
 ```
+![image](https://github.com/Zyadsowilam/ScratchNeuralNetwork/assets/96208685/81853179-0203-4259-9f9a-c4b78ff17700)
+
 - **Behavior**: The tanh function is a scaled version of the sigmoid function. It pushes the input values to -1 and 1. The gradient of the tanh function is four times greater than that of the sigmoid, resulting in stronger gradients and faster learning.
 
 ### Differences Between Sigmoid and Tanh
 
 - **Gradient**: Tanh has a higher gradient than sigmoid, leading to larger weight updates.
 - **Output Symmetry**: Tanh's output is symmetric around zero, which can lead to faster convergence during training.
+![image](https://github.com/Zyadsowilam/ScratchNeuralNetwork/assets/96208685/ca306eeb-e854-425c-8d73-33ab66518bac)
 
-## Illustrations
 
-### Example Images from MNIST Dataset
 
-![MNIST Examples](images/mnist_examples.png)
-
-### Sigmoid Activation Function
-![image](https://github.com/Zyadsowilam/ScratchNeuralNetwork/assets/96208685/e14b6b86-f3f5-4208-9fd6-df59896f32eb)
-
-![Sigmoid Function](images/sigmoid.png)
-
-### Tanh Activation Function
-
-![Tanh Function](images/tanh.png)
-
-### Forward Propagation Illustration
-
-![Forward Propagation](images/forward_propagation.png)
 
 ## Conclusion
 
-Understanding the MNIST dataset and the structure of the neural network, including the choice of activation functions, is crucial for building effective models for digit recognition. The sigmoid and tanh functions, with their distinct properties, offer different advantages in terms of gradient behavior and output symmetry.
 
 ---
 
-This README provides a high-level overview of the MNIST dataset and the neural network architecture used for digit recognition, along with detailed explanations of key activation functions.
+
