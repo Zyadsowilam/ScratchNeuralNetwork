@@ -56,13 +56,12 @@ The tanh function outputs a value between -1 and 1:
 
 ## Illustrations
 
-### Example Images from MNIST Dataset
 
-![MNIST Examples](images/mnist_examples.png)
 
 ### Sigmoid Activation Function
 
-![Sigmoid Function](images/sigmoid.png)
+![Sigmoid Function](![image](https://github.com/Zyadsowilam/ScratchNeuralNetwork/assets/96208685/31c6664e-1789-4771-8eb9-6bd810796b46)
+)
 
 ### Tanh Activation Function
 
