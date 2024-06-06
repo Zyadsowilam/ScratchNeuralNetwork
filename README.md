@@ -127,10 +127,16 @@ Backpropagation, short for "backward propagation of errors," is an algorithm for
 These equations represent the gradients of the loss function with respect to the parameters of the neural network, which are used to update the weights and biases during training via gradient descent or other optimization algorithms.
 Adding alpha hyper paramter rate
 ```math
-( \text{dW}[1] =  \text{W}[1]  - \( \alpha \) \text{dW}[1].
+( \text{dW}[2] =  \text{W}[2]  -  \alpha  \text{dW}[2].
 ```
 ```math
- ( \text{dbais}[1] = \frac{1}{m} \sum \text{dhidden\_layer}[1] ).
+ ( \text{dbais}[2] = \text{dbais}[2]  -  \alpha  \text{dbais}[2].
+```
+```math
+( \text{dW}[1] =  \text{W}[1]  -  \alpha  \text{dW}[1].
+```
+```math
+ ( \text{dbais}[1] = \text{dbais}[1]  -  \alpha  \text{dbais}[1].
 ```
 ## Conclusion
 
