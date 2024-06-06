@@ -106,22 +106,22 @@ Backpropagation, short for "backward propagation of errors," is an algorithm for
 
 - output\_Layer}[2]  is the output after the softmax activation function.
 ```math
- ( \text{dhidden\_layer}[2] = \text{output\_Layer}[2] - Y \), where \( Y \) is the true labels.
+ ( text{dhidden\_layer}[2] = \text{output\_Layer}[2] - Y ), where ( Y ) is the true labels.
 ```
 ```math
- ( \text{dW}[2] = \frac{1}{m} \text{dhidden\_layer}[2] \times \text{output\_Layer}[1]^T \), where \( m \) is the number of samples.
+ ( text{dW}[2] = \frac{1}{m} \text{dhidden\_layer}[2] \times \text{output\_Layer}[1]^T ), where \( m \) is the number of samples.
 ```
 ```math
- \( \text{dbais}[2] = \frac{1}{m} \sum \text{dhidden\_layer}[2] \), the average of \( \text{dhidden\_layer}[2] \) across all samples.
+ ( \text{dbais}[2] = \frac{1}{m} \sum \text{dhidden\_layer}[2] \), the average of \( \text{dhidden\_layer}[2] ) across all samples.
 ```
 ```math
- \( \text{dhidden\_layer}[1] = (\text{W}[2]^T \times \text{dhidden\_layer}[2]) \circ g'(\text{hidden\_layer}[1]) \), where \( g' \) represents the derivative of the activation function applied element-wise.
+ ( \text{dhidden\_layer}[1] = (\text{W}[2]^T \times \text{dhidden\_layer}[2]) \circ g'(\text{hidden\_layer}[1]) ), where \( g' ) represents the derivative of the activation function applied element-wise.
 ```
 ```math
-\( \text{dW}[1] = \frac{1}{m} \text{dhidden\_layer}[1] \times \text{input\_layer}^T \).
+( \text{dW}[1] = \frac{1}{m} \text{dhidden\_layer}[1] \times \text{input\_layer}^T ).
 ```
 ```math
- \( \text{dbais}[1] = \frac{1}{m} \sum \text{dhidden\_layer}[1] \).
+ ( text{dbais}[1] = \frac{1}{m} \sum \text{dhidden\_layer}[1] ).
 ```
 These equations represent the gradients of the loss function with respect to the parameters of the neural network, which are used to update the weights and biases during training via gradient descent or other optimization algorithms.
 
