@@ -103,6 +103,18 @@ In vectorized form, the softmax function for a vector \( \mathbf{z} \) can be wr
 
 Backpropagation, short for "backward propagation of errors," is an algorithm for supervised learning of artificial neural networks using gradient descent. Given an artificial neural network and an error function, the method calculates the gradient of the error function with respect to the neural network's weights. It is a generalization of the delta rule for perceptrons to multilayer feedforward neural networks.
 
+
+- output\_Layer}[2]  is the output after the softmax activation function.
+```math
+- \( \text{dhidden\_layer}[2] = \text{output\_Layer}[2] - Y \), where \( Y \) is the true labels.
+- \( \text{dW}[2] = \frac{1}{m} \text{dhidden\_layer}[2] \times \text{output\_Layer}[1]^T \), where \( m \) is the number of samples.
+- \( \text{dbais}[2] = \frac{1}{m} \sum \text{dhidden\_layer}[2] \), the average of \( \text{dhidden\_layer}[2] \) across all samples.
+- \( \text{dhidden\_layer}[1] = (\text{W}[2]^T \times \text{dhidden\_layer}[2]) \circ g'(\text{hidden\_layer}[1]) \), where \( g' \) represents the derivative of the activation function applied element-wise.
+- \( \text{dW}[1] = \frac{1}{m} \text{dhidden\_layer}[1] \times \text{input\_layer}^T \).
+- \( \text{dbais}[1] = \frac{1}{m} \sum \text{dhidden\_layer}[1] \).
+```
+These equations represent the gradients of the loss function with respect to the parameters of the neural network, which are used to update the weights and biases during training via gradient descent or other optimization algorithms.
+
 ## Conclusion
 
 
