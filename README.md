@@ -38,7 +38,7 @@ The sigmoid function outputs a value between 0 and 1:
 ```math
 \mathbf{s(x) = \frac{1}{1 + e^{-x}}}
 ```
-        ![image](https://github.com/Zyadsowilam/ScratchNeuralNetwork/assets/96208685/e14b6b86-f3f5-4208-9fd6-df59896f32eb)
+![image](https://github.com/Zyadsowilam/ScratchNeuralNetwork/assets/96208685/e14b6b86-f3f5-4208-9fd6-df59896f32eb)
 - **Behavior**: Values close to 1 indicate an active neuron, and values close to 0 indicate an inactive neuron. The sigmoid function pushes the input values to the ends of the curve (0 or 1), with significant changes in output for inputs around zero.
 
 ### Tanh Activation Function
