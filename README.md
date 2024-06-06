@@ -17,9 +17,11 @@ Each image in the MNIST dataset is 28x28 pixels, where the pixel values range fr
 ### Hidden Layer
 
 - **Hidden Layer**: The hidden layer has 10 neurons. The input to the hidden layer is calculated as follows:
+  ```math
   \[
   \text{hidden\_layer}[1](10 \times m) = \text{Weight}[1](10 \times 784) \times \text{input\_layer}[0] + \text{bias}[1](10 \times m)
   \]
+  ```
   where \(m\) is the number of images.
 
 ### Output Layer
