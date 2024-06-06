@@ -98,10 +98,10 @@ In vectorized form, the softmax function for a vector \( \mathbf{z} \) can be wr
 
 ![image](https://github.com/Zyadsowilam/ScratchNeuralNetwork/assets/96208685/f644c663-98d1-4f93-b0a0-4e76ebad9668)
 
-###  Backpropagation
+# Backpropagation
+
 
 Backpropagation, short for "backward propagation of errors," is an algorithm for supervised learning of artificial neural networks using gradient descent. Given an artificial neural network and an error function, the method calculates the gradient of the error function with respect to the neural network's weights. It is a generalization of the delta rule for perceptrons to multilayer feedforward neural networks.
-
 
 ## Conclusion
 
