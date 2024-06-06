@@ -56,8 +56,28 @@ The tanh function outputs a value between -1 and 1:
 - **Gradient**: Tanh has a higher gradient than sigmoid, leading to larger weight updates.
 - **Output Symmetry**: Tanh's output is symmetric around zero, which can lead to faster convergence during training.
 ![image](https://github.com/Zyadsowilam/ScratchNeuralNetwork/assets/96208685/ca306eeb-e854-425c-8d73-33ab66518bac)
+Rectified Linear Activation Function
 
+The sigmoid and hyperbolic tangent activation functions cannot be used in networks with many layers due to the vanishing gradient problem.
+The rectified linear activation function overcomes the vanishing gradient problem, allowing models to learn faster and perform better.
+The ReLU (Rectified Linear Unit) activation function is defined as follows:
 
+```math
+\text{ReLU}(x) = \begin{cases} 
+0 & \text{if } x \leq 0 \\
+x & \text{if } x > 0 
+\end{cases}
+```
+
+In mathematical notation, it can be expressed as:
+
+```math
+\text{ReLU}(x) = \max(0, x)
+```
+
+This function outputs the input value \( x \) if \( x \) is greater than 0, and 0 otherwise. It's a simple yet effective activation function widely used in neural networks, especially in deep learning models.
+
+![image](https://github.com/Zyadsowilam/ScratchNeuralNetwork/assets/96208685/431e8d4a-36e3-43ea-b289-843a1868981c)
 
 
 ## Conclusion
