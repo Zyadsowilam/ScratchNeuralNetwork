@@ -79,6 +79,25 @@ This function outputs the input value \( x \) if \( x \) is greater than 0, and 
 
 ![image](https://github.com/Zyadsowilam/ScratchNeuralNetwork/assets/96208685/431e8d4a-36e3-43ea-b289-843a1868981c)
 
+Softmax
+The softmax function is a function that turns a vector of K real values into a vector of K real values that sum to 1. The input values can be positive, negative, zero, or greater than one, but the softmax transforms them into values between 0 and 1, so that they can be interpreted as probabilities. If one of the inputs is small or negative, the softmax turns it into a small probability, and if an input is large, then it turns it into a large probability, but it will always remain between 0 and 1.The softmax function is a commonly used activation function, especially in the output layer of a neural network for multi-class classification problems. It converts raw scores or logits into probabilities that sum up to 1. The softmax function is defined as follows:
+
+Given a vector \( \mathbf{z} = (z_1, z_2, ..., z_n) \) of raw scores (logits), the softmax function \( \text{softmax}(z_i) \) for each element \( z_i \) is calculated as:
+
+```math
+\text{softmax}(z_i) = \frac{e^{z_i}}{\sum_{j=1}^{n} e^{z_j}}
+```
+
+This function exponentiates each element of the input vector \( \mathbf{z} \), then divides each exponentiated value by the sum of all exponentiated values in the vector, ensuring that the resulting values form a probability distribution that sums to 1. 
+
+In vectorized form, the softmax function for a vector \( \mathbf{z} \) can be written as:
+
+```math
+\text{softmax}(\mathbf{z})_i = \frac{e^{z_i}}{\sum_{j=1}^{n} e^{z_j}}
+```
+
+for \( i = 1, 2, ..., n \), where \( n \) is the number of classes or elements in the vector \( \mathbf{z} \).
+![image](https://github.com/Zyadsowilam/ScratchNeuralNetwork/assets/96208685/101ed3ba-3aff-4179-a29c-e4d98c77f75b)
 
 ## Conclusion
 
